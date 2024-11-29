@@ -1,0 +1,47 @@
+@use 'sass:color';
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+$color-button-base: #5ea6ac;
+$color-bg: #1a1b1b;
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  --radius-default: 6px;
+  --color-text: white;
+  --color-bg: #{$color-bg};
+  --color-button-border: #{color.scale($color-button-base, $saturation: -80%)};
+  --color-button-border-highlight: #{color.scale($color-button-base, $lightness: 75%)};
+  --color-button-bg: #{color.scale($color-bg, $lightness: 6%)};
+  --color-accent: rgb(238, 224, 68);
+  --color-success: rgb(110, 202, 110);
+  --color-failure: rgb(224, 145, 102);
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+}
+
+main {
+  margin-inline: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+div#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.failure {
+  color: var(--color-failure);
+}
