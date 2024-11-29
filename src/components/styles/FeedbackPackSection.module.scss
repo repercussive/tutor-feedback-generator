@@ -1,0 +1,16 @@
+.container {
+  border: solid 1px var(--color-accent);
+  background-color: rgba(108, 218, 232, 0.178);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+
+  h2 {
+    font-weight: 500;
+
+    span {
+      font-weight: 700;
+      color: var(--color-accent)
+    }
+  }
+}

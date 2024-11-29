@@ -7,3 +7,5 @@ export type FeedbackPack = {
     negativeComments: string[]
   }>
 }
+
+export type QuestionResponse = 'positive' | 'neutral' | 'negative' | 'none'

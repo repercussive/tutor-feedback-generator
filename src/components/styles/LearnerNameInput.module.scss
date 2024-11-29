@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  label {
+    font-weight: 600;
+    margin-right: 0.8ch;
+  }
+
+  input {
+    display: block;
+    flex: 1;
+  }
+}
