@@ -15,7 +15,7 @@ $color-bg: #1a1b1b;
   --color-button-border: #{color.scale($color-button-base, $saturation: -80%)};
   --color-button-border-highlight: #{color.scale($color-button-base, $lightness: 75%)};
   --color-button-bg: #{color.scale($color-bg, $lightness: 6%)};
-  --color-accent: rgb(238, 224, 68);
+  --color-accent: rgb(108, 217, 232);
   --color-success: rgb(110, 202, 110);
   --color-failure: rgb(224, 145, 102);
 }
@@ -36,6 +36,12 @@ div#root {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+header {
+  padding-block: 1rem;
+  border-bottom: solid 1px var(--color-accent);
+  margin-bottom: 1.5rem;
 }
 
 .success {
