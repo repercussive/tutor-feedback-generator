@@ -4,7 +4,7 @@ import { initializeQuestionResponses } from '@helpers/initializeQuestionResponse
 import { create } from 'zustand'
 import { generateFeedback } from '@src/helpers/generateFeedback'
 import { validateCustomFeedbackPack } from '@src/helpers/validateCustomFeedbackPack'
-import customFeedbackPackTemplate from '@src/resources/custom-feedback-pack-template.json'
+import { createTemplateFeedbackPack } from '@src/helpers/createTemplateFeedbackPack'
 
 const initialFeedbackPackCategory = loadFeedbackPackCategoryFromLocalStorage()
 const initialCustomFeedbackPack = loadCustomFeedbackPackFromLocalStorage()
@@ -60,13 +60,8 @@ export const useFeedbackStore = create<FeedbackState>()((set) => ({
 }))
 
 function loadCustomFeedbackPackFromLocalStorage(): FeedbackPack {
-  const customPack = localStorage.getItem('customFeedbackPack')
-
-  if (!customPack) {
-    return customFeedbackPackTemplate
-  }
-
-  return validateCustomFeedbackPack(customPack) || customFeedbackPackTemplate
+  const customPack = localStorage.getItem('customFeedbackPack') ?? ''
+  return validateCustomFeedbackPack(customPack) || createTemplateFeedbackPack('My Custom Feedback Pack')
 }
 
 function loadFeedbackPackCategoryFromLocalStorage() {

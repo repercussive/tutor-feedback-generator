@@ -1,9 +1,9 @@
 import { useFeedbackStore } from '@src/stores/feedbackStore'
 import { useState } from 'react'
 import { FeedbackPack } from '@src/types'
-import { validateCustomFeedbackPack } from '@src/helpers/validateCustomFeedbackPack'
+import { validateCustomFeedbackPack } from '@helpers/validateCustomFeedbackPack'
+import { createTemplateFeedbackPack } from '@helpers/createTemplateFeedbackPack'
 import { defaultFeedbackPack } from '@src/resources/default-feedback-pack'
-import customFeedbackPackTemplate from '@src/resources/custom-feedback-pack-template.json'
 import Button from '@src/components/Button'
 import styles from '@components/styles/FeedbackPackSection.module.scss'
 
@@ -70,6 +70,7 @@ function CustomFeedbackPackSection() {
   const setActiveFeedbackPack = useFeedbackStore((state) => state.setActiveFeedbackPack)
   const [uploadedFile, setUploadedFile] = useState<File | null>(null)
   const [isPackSubmittedSuccessfully, setIsPackSubmittedSuccessfully] = useState<boolean | undefined>()
+  const [templateFeedbackPack] = useState(createTemplateFeedbackPack())
 
   const handleSubmitFeedbackPackFile = async () => {
     if (!uploadedFile) return
@@ -96,12 +97,12 @@ function CustomFeedbackPackSection() {
         </a>)
       </p>
       <details>
-        <summary>I want to load a new custom feedback pack.</summary>
+        <summary>I want to create or load a new custom feedback pack.</summary>
         <ol>
           <li>
             <a
-              href={generateFeedbackPackDownloadHref(customFeedbackPackTemplate)}
-              download="custom-feedback-pack-template.json"
+              href={generateFeedbackPackDownloadHref(templateFeedbackPack)}
+              download={generateFeedbackPackFileName(templateFeedbackPack)}
             >
               Click here
             </a>
