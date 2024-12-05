@@ -1,27 +1,10 @@
-import { FeedbackPack } from '@src/types'
-
-export const standardFeedbackPack: FeedbackPack = {
-  "packTitle": "Standard Feedback Pack",
+{
+  "packTitle": "My Custom Feedback Pack",
   "questions": [
     {
       "questionName": "Punctuality",
       "positiveComments": [
-        "<NAME> consistently arrived on time and was well-prepared for each session.",
-        "<NAME> demonstrated excellent time management by being punctual for all classes.",
-        "<NAME> was always on time and present for the full sessions.",
-        "<NAME> set a great example by logging in promptly for every class.",
-        "<NAME> was reliable and consistently on time, showing respect for the class schedule.",
-        "<NAME> showed great commitment by maintaining perfect punctuality.",
-        "<NAME> was always prepared and logged in on schedule.",
-        "<NAME> made an effort to be punctual, even during challenging circumstances.",
-        "<NAME> regularly arrived prepared and on time.",
-        "<NAME> showed that they valued their learning by prioritising punctuality.",
-        "<NAME> demonstrated responsibility by being consistently on time.",
-        "<NAME> arrived punctually, ready to contribute meaningfully to the sessions.",
-        "<NAME> ensured they were always logged in on time.",
-        "<NAME> maintained a perfect attendance record and punctuality.",
-        "<NAME> was a model of timeliness, always ready when class began.",
-        "<NAME> showed consistent on-time attendance and preparation."
+        "slayeee"
       ],
 
       "neutralComments": [
@@ -122,7 +105,7 @@ export const standardFeedbackPack: FeedbackPack = {
       ]
     },
     {
-      "questionName": "Work Ethic",
+      "questionName": "Work ethic",
       "positiveComments": [
         "<NAME> maintained focus and completed practice activities diligently.",
         "<NAME> showed persistence and commitment to learning.",

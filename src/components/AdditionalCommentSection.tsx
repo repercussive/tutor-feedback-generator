@@ -31,7 +31,7 @@ function AdditionalCommentsSection() {
         Additional comments (e.g. recommendations for further learning):
       </label>
 
-      <p>💡 Tip: if you type <b>{'<name>'}</b>, the learner's name will automatically be inserted.</p>
+      <p><span>💡</span> Tip: if you type <b>{'<name>'}</b>, the learner's name will automatically be inserted.</p>
 
       <textarea
         id="additional-comments-input"

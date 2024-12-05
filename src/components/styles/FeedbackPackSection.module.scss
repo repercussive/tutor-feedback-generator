@@ -7,12 +7,87 @@
   margin-bottom: 1rem;
   border-radius: 5px;
 
-  h2 {
-    font-weight: 500;
+  div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
 
-    span {
-      font-weight: 700;
-      color: var(--color-accent)
+    select {
+      flex: 1;
+      font-weight: 550;
     }
+
+    &:has(+ *) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .loaded-pack {
+    background-color: rgba(255, 255, 255, 0.126);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+
+  details {
+    background-color: var(--color-bg);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+
+    summary:hover {
+      cursor: pointer;
+      color: var(--color-accent);
+    }
+
+    ol {
+      margin-block: 0.5rem;
+      line-height: 1.25;
+
+      li:not(:last-of-type) {
+        margin-bottom: 0.75rem;
+      }
+    }
+
+    p:not(:last-of-type) {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  b {
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+
+  input[type=file] {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  label:has(+ input[type=file]) {
+    display: block;
+    margin-top: 0.75rem;
+    color: var(--color-accent);
+  }
+ 
+  input[type=file], button {
+    width: 100%;
+  }
+  
+  .success, .failure {
+    text-align: center;
+    padding-block: 0.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    border-radius: 2px;
+  }
+
+  .success {
+    background-color: rgba(131, 227, 131, 0.12);
+  }
+
+  .failure {
+    background-color: rgb(224, 145, 102, 0.12);
   }
 }

@@ -17,7 +17,7 @@ $color-accent: #6cd9e8;
   --color-button-border-highlight: #{color.scale($color-button-base, $lightness: 45%)};
   --color-button-bg: #{color.scale($color-button-base, $lightness: -75%)};
   --color-accent: #{$color-accent};
-  --color-success: rgb(110, 202, 110);
+  --color-success: rgb(131, 227, 131);
   --color-failure: rgb(224, 145, 102);
   --color-focus-outline: rgb(255, 255, 255);
 }
@@ -45,6 +45,10 @@ header {
   padding-block: 0.75rem;
   border-bottom: solid 2px var(--color-accent);
   margin-bottom: 1.25rem;
+
+  h1 {
+    font-size: 1.75rem;
+  }
 }
 
 footer {
@@ -54,11 +58,9 @@ footer {
 }
 
 input,
-textarea {
+textarea,
+select {
   border-radius: 3px;
-  border: solid 2px rgba(255, 255, 255, 0.25);
-  background-color: rgba(255, 255, 255, 0.075);
-  color: var(--color-text);
   padding: 0.2ch 0.5ch;
 
   &:focus-visible {
@@ -66,9 +68,24 @@ textarea {
   }
 }
 
+input,
+textarea {
+  color: var(--color-text);
+  border: solid 2px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+input::file-selector-button {
+  font-family: inherit;
+}
+
 label {
   font-weight: 600;
   padding-inline: 3px;
+}
+
+a {
+  color: rgb(157, 186, 254);
 }
 
 .success {
