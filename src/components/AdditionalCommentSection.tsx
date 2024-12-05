@@ -37,6 +37,7 @@ function AdditionalCommentsSection() {
         id="additional-comments-input"
         value={additionalComments}
         onChange={(e) => handleChangeComments(e.target.value)}
+        onBlur={saveAdditionalCommentsToLocalStorage.flush}
         rows={6}
       />
     </div>
