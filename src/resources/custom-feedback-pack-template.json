@@ -1,10 +1,25 @@
 {
-  "packTitle": "My Custom Feedback Pack",
+  "packTitle": "Custom Feedback Pack",
   "questions": [
     {
       "questionName": "Punctuality",
       "positiveComments": [
-        "slayeee"
+        "<NAME> consistently arrived on time and was well-prepared for each session.",
+        "<NAME> demonstrated excellent time management by being punctual for all classes.",
+        "<NAME> was always on time and present for the full sessions.",
+        "<NAME> set a great example by logging in promptly for every class.",
+        "<NAME> was reliable and consistently on time, showing respect for the class schedule.",
+        "<NAME> showed great commitment by maintaining perfect punctuality.",
+        "<NAME> was always prepared and logged in on schedule.",
+        "<NAME> made an effort to be punctual every single session.",
+        "<NAME> regularly arrived prepared and on time.",
+        "<NAME> showed that they valued their learning by prioritising punctuality.",
+        "<NAME> demonstrated responsibility by being consistently on time.",
+        "<NAME> arrived punctually, ready to participate in the sessions.",
+        "<NAME> ensured they were always logged in on time.",
+        "<NAME> maintained a perfect attendance record and punctuality.",
+        "<NAME> was a model of timeliness, always ready when class began.",
+        "<NAME> showed consistent on-time attendance and preparation."
       ],
 
       "neutralComments": [
@@ -47,7 +62,7 @@
         "<NAME> had their camera on, showing attentiveness and readiness to learn.",
         "<NAME> was committed to keeping their camera active, enhancing group interaction.",
         "<NAME> kept the camera on and used it to actively participate.",
-        "<NAME> ensured active visibility via camera, which enhanced the class's engagement level.",
+        "<NAME> ensured active visibility via camera, which enhanced the class's level of engagement.",
         "<NAME> helped create a more interactive experience by maintaining their presence on camera.",
         "<NAME> consistently kept their camera on, improving the overall classroom dynamic."
       ],
@@ -83,7 +98,7 @@
         "<NAME> took initiative to engage in meaningful dialogue during sessions.",
         "<NAME> demonstrated curiosity and enthusiasm, enhancing the class dynamic.",
         "<NAME> regularly contributed ideas that enriched group discussions.",
-        "<NAME> was an active participant, promiting collaboration and teamwork.",
+        "<NAME> was an active participant, promoting collaboration and teamwork.",
         "<NAME> consistently provided valuable input in discussions.",
         "<NAME> frequently contributed to discussions, showing deep understanding.",
         "<NAME> helped create a healthy learning environment through active participation.",
@@ -108,10 +123,10 @@
       "questionName": "Work ethic",
       "positiveComments": [
         "<NAME> maintained focus and completed practice activities diligently.",
-        "<NAME> showed persistence and commitment to learning.",
-        "<NAME> demonstrated a proactive approach to learning and improvement through their hard work.",
-        "<NAME> took ownership of their learning and stayed committed throughout the sessions.",
-        "<NAME> consistently followed through on commitments and responsibilities.",
+        "<NAME> showed persistence and commitment to learning by completing practice activities.",
+        "<NAME> demonstrated a proactive approach to learning and improvement through their hard work during practice tasks.",
+        "<NAME> took ownership of their learning and stayed committed to practice activities throughout the sessions.",
+        "<NAME> consistently followed through by completing practice tasks.",
         "<NAME> approached practice tasks with dedication, ensuring they take as much learning as possible from the sessions.",
         "<NAME> maintained a positive attitude toward learning and practice tasks."
       ],
