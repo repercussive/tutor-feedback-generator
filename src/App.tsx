@@ -7,22 +7,23 @@ import AdditionalCommentsSection from '@components/AdditionalCommentSection'
 
 function App() {
   const activeFeedbackPack = useFeedbackStore((state) => state.activeFeedbackPack)
+  const learnerName = useFeedbackStore((state) => state.learnerName)
 
   return (
     <>
       <header>
         <h1>🍎 Tutor feedback generator</h1>
+        <p>Created by Liam Robertson</p>
       </header>
       <main>
         <FeedbackPackSection />
         <LearnerNameInput />
-        <FeedbackSelector feedbackPack={activeFeedbackPack} />
-        <AdditionalCommentsSection />
-        <GenerateFeedbackSection />
+        {learnerName && <div className="fade-in">
+          <FeedbackSelector feedbackPack={activeFeedbackPack} />
+          <AdditionalCommentsSection />
+          <GenerateFeedbackSection />
+        </div>}
       </main>
-      <footer>
-        Created by Liam Robertson
-      </footer>
     </>
   )
 }

@@ -42,19 +42,18 @@ div#root {
 }
 
 header {
-  padding-block: 0.75rem;
-  border-bottom: solid 2px var(--color-accent);
-  margin-bottom: 1.25rem;
+  margin-block: 1.25rem;
+  text-align: center;
 
   h1 {
     font-size: 1.75rem;
   }
-}
 
-footer {
-  color: rgb(130, 130, 130);
-  font-style: italic;
-  margin-bottom: 1rem;
+  p {
+    font-style: italic;
+    color: rgb(130, 130, 130);
+    font-style: italic;
+  }
 }
 
 input,
@@ -94,4 +93,20 @@ a {
 
 .failure {
   color: var(--color-failure);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in forwards 600ms;
+  animation-delay: 100ms;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
