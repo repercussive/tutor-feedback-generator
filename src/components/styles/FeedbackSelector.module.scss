@@ -5,11 +5,23 @@
   table {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.07);
-    border-radius: 5px;
-    padding: 0.75rem 1rem;
+    border-radius: 7px;
+    padding: 0.25rem;
 
     thead tr {
       background-color: rgba(255, 255, 255, 0.136);
+
+      th:first-of-type {
+        border-top-left-radius: 5px;
+      }
+
+      th:last-of-type {
+        border-top-right-radius: 5px;
+      }
+    }
+
+    tr:last-of-type td:first-of-type {
+      border-bottom-left-radius: 5px;
     }
 
     td:first-of-type {

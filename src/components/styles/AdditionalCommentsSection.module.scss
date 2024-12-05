@@ -1,0 +1,22 @@
+.container {
+  padding-bottom: 0;
+
+  label {
+    display: block;
+  }
+  
+  p {
+    font-style: italic;
+    padding-bottom: 0.25rem;
+    color: rgb(174, 174, 174)
+  }
+
+  p b {
+    color: var(--color-accent);
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+}

@@ -3,6 +3,7 @@ import FeedbackSelector from '@components/FeedbackSelector'
 import LearnerNameInput from '@components/LearnerNameInput'
 import FeedbackPackSection from '@components/FeedbackPackSection'
 import GenerateFeedbackSection from '@components/GenerateFeedbackSection'
+import AdditionalCommentsSection from '@components/AdditionalCommentSection'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <FeedbackPackSection />
         <LearnerNameInput />
         <FeedbackSelector feedbackPack={standardFeedbackPack} />
+        <AdditionalCommentsSection />
         <GenerateFeedbackSection />
       </main>
     </>

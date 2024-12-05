@@ -11,6 +11,8 @@ interface FeedbackState {
   setFeedbackPack: (feedbackPack: FeedbackPack) => void,
   questionResponses: Record<string, QuestionResponse>,
   setQuestionResponse: (question: string, response: QuestionResponse) => void,
+  additionalComments: string,
+  setAdditionalComments: (comments: string) => void,
   feedbackContent: string,
   setFeedbackContent: (content: string) => void,
   generateFeedback: () => void,
@@ -31,10 +33,13 @@ export const useFeedbackStore = create<FeedbackState>()((set) => ({
     { questionResponses: { ...state.questionResponses, [question]: response } }
   )),
 
-  feedbackContent: 'Click the button above to generate feedback. Once generated, it will display here, and you can freely edit this text box.',
+  additionalComments: '',
+  setAdditionalComments: (comments: string) => set(() => ({ additionalComments: comments })),
+
+  feedbackContent: '',
   setFeedbackContent: (content: string) => set(() => ({ feedbackContent: content })),
   generateFeedback: () => set((state) => ({
-    feedbackContent: generateFeedback(state.feedbackPack, state.learnerName, state.questionResponses)
+    feedbackContent: generateFeedback(state.feedbackPack, state.learnerName, state.questionResponses, state.additionalComments)
   })),
 }))
 

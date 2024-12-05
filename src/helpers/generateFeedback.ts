@@ -1,6 +1,11 @@
 import { FeedbackPack, QuestionResponse } from '@src/types'
 
-export function generateFeedback(feedbackPack: FeedbackPack, learnerName: string, responses: Record<string, QuestionResponse>) {
+export function generateFeedback(
+  feedbackPack: FeedbackPack, 
+  learnerName: string, 
+  responses: Record<string, QuestionResponse>,
+  additionalComments: string
+) {
   let result = ''
 
   for (const question of feedbackPack.questions) {
@@ -10,7 +15,11 @@ export function generateFeedback(feedbackPack: FeedbackPack, learnerName: string
 
     const possibleComments = question[`${response}Comments`]
     const randomComment = possibleComments[Math.floor(Math.random() * possibleComments.length)]
-    result += insertLearnerName(randomComment, learnerName) + '\n'
+    result += insertLearnerName(randomComment, learnerName) + '\n\n'
+  }
+
+  if (additionalComments) {
+    result += insertLearnerName(additionalComments, learnerName)
   }
 
   return result

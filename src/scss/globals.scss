@@ -2,8 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-$color-button-base: #5ea6ac;
+$color-button-base: #58c6d0;
 $color-bg: #1a1b1b;
+$color-accent: #6cd9e8;
 
 :root {
   line-height: 1.5;
@@ -12,12 +13,13 @@ $color-bg: #1a1b1b;
   --radius-default: 6px;
   --color-text: white;
   --color-bg: #{$color-bg};
-  --color-button-border: #{color.scale($color-button-base, $saturation: -80%)};
-  --color-button-border-highlight: #{color.scale($color-button-base, $lightness: 75%)};
-  --color-button-bg: #{color.scale($color-bg, $lightness: 6%)};
-  --color-accent: rgb(108, 217, 232);
+  --color-button-border: #{color.scale($color-button-base, $saturation: -20%)};
+  --color-button-border-highlight: #{color.scale($color-button-base, $lightness: 45%)};
+  --color-button-bg: #{color.scale($color-button-base, $lightness: -75%)};
+  --color-accent: #{$color-accent};
   --color-success: rgb(110, 202, 110);
   --color-failure: rgb(224, 145, 102);
+  --color-focus-outline: rgb(255, 255, 255);
 }
 
 body {
@@ -40,9 +42,27 @@ div#root {
 }
 
 header {
-  padding-block: 1rem;
-  border-bottom: solid 1px var(--color-accent);
-  margin-bottom: 1.5rem;
+  padding-block: 0.75rem;
+  border-bottom: solid 2px var(--color-accent);
+  margin-bottom: 1.25rem;
+}
+
+input,
+textarea {
+  border-radius: 3px;
+  border: solid 2px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.075);
+  color: var(--color-text);
+  padding: 0.2ch 0.5ch;
+
+  &:focus-visible {
+    outline: solid 3px var(--color-focus-outline);
+  }
+}
+
+label {
+  font-weight: 600;
+  padding-inline: 3px;
 }
 
 .success {
