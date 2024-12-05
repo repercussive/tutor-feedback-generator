@@ -29,8 +29,8 @@ function FeedbackPackSection() {
       <div>
         <label htmlFor="feedback-pack-select">Feedback pack:</label>
 
-        <select 
-          id="feedback-pack-select" value={feedbackPackCategory} 
+        <select
+          id="feedback-pack-select" value={feedbackPackCategory}
           onChange={(e) => handleSelectFeedbackPackCategory(e.target.value as 'default' | 'custom')}
         >
           <option value="default">Default</option>
@@ -38,8 +38,29 @@ function FeedbackPackSection() {
         </select>
       </div>
 
+      {feedbackPackCategory === 'default' && <FeedbackPackInfo />}
       {feedbackPackCategory === 'custom' && <CustomFeedbackPackSection />}
     </div>
+  )
+}
+
+function FeedbackPackInfo() {
+  return (
+    <details>
+      <summary>What's a feedback pack?</summary>
+      <ul>
+        <li>
+          A <b>feedback pack</b> is a pool of preset comments which will be randomly sampled to generate{' '}
+          your learner feedback.
+        </li>
+        <li>
+          You have currently selected the <b>default feedback pack</b>, which provides a standard set of comments.
+        </li>
+        <li>
+          If you would like to supply your own comments, please choose "<b>Custom</b>" from the menu above.
+        </li>
+      </ul>
+    </details>
   )
 }
 
@@ -75,7 +96,7 @@ function CustomFeedbackPackSection() {
         </a>)
       </p>
       <details>
-        <summary>I want to load a new custom feedback pack</summary>
+        <summary>I want to load a new custom feedback pack.</summary>
         <ol>
           <li>
             <a

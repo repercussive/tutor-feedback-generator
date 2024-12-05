@@ -16,14 +16,14 @@ function App() {
         <p>Created by Liam Robertson</p>
       </header>
       <main>
-        <FeedbackPackSection />
         <LearnerNameInput />
         {learnerName && <div className="fade-in">
           <FeedbackSelector feedbackPack={activeFeedbackPack} />
           <AdditionalCommentsSection />
+          <FeedbackPackSection />
           <GenerateFeedbackSection />
         </div>}
-      </main>
+      </main >
     </>
   )
 }

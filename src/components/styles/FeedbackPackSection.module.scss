@@ -4,7 +4,7 @@
 .container {
   background-color: #{color.scale(globals.$color-accent, $alpha: -80%, $saturation: -50%)};
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   border-radius: 5px;
 
   div {
@@ -40,7 +40,7 @@
       color: var(--color-accent);
     }
 
-    ol {
+    ul, ol {
       margin-block: 0.5rem;
       line-height: 1.25;
 

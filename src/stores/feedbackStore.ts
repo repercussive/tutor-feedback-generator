@@ -25,7 +25,7 @@ interface FeedbackState {
   setAdditionalComments: (comments: string) => void,
   feedbackContent: string,
   setFeedbackContent: (content: string) => void,
-  generateFeedback: () => void,
+  generateFeedback: () => void
 }
 
 export const useFeedbackStore = create<FeedbackState>()((set) => ({
@@ -56,7 +56,7 @@ export const useFeedbackStore = create<FeedbackState>()((set) => ({
   setFeedbackContent: (content: string) => set(() => ({ feedbackContent: content })),
   generateFeedback: () => set((state) => ({
     feedbackContent: generateFeedback(state.activeFeedbackPack, state.learnerName, state.questionResponses, state.additionalComments)
-  })),
+  }))
 }))
 
 function loadCustomFeedbackPackFromLocalStorage(): FeedbackPack {
