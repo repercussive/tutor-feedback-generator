@@ -18,6 +18,9 @@ function App() {
         <AdditionalCommentsSection />
         <GenerateFeedbackSection />
       </main>
+      <footer>
+        Created by Liam Robertson
+      </footer>
     </>
   )
 }
