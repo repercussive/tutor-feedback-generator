@@ -3,6 +3,7 @@
   align-items: center;
   margin-bottom: 1rem;
   flex-wrap: wrap;
+  position: relative;
 
   label {
     margin-right: 0.8ch;
@@ -15,9 +16,15 @@
   
   p {
     width: 100%;
-    padding-block: 1rem;
-    font-style: italic;
+    padding-block: 5rem;
+    font-weight: 500;
+    font-size: 1.35rem;
     text-align: center;
-    opacity: 0.75;
+    position: absolute;
+    top: 2.5rem;
+    background-color: var(--color-bg);
+    z-index: 1;
+    border-radius: 5px;
+    opacity: 0.85;
   }
 }

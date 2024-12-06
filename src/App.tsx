@@ -17,12 +17,16 @@ function App() {
       </header>
       <main>
         <LearnerNameInput />
-        {learnerName && <div className="fade-in">
+        <div style={{
+          opacity: learnerName ? 1 : 0.25,
+          transition: 'opacity 0.4s',
+          pointerEvents: learnerName ? 'auto' : 'none'
+        }}>
           <FeedbackSelector feedbackPack={activeFeedbackPack} />
           <AdditionalCommentsSection />
           <FeedbackPackSection />
           <GenerateFeedbackSection />
-        </div>}
+        </div>
       </main >
     </>
   )

@@ -92,19 +92,3 @@ a {
 .failure {
   color: var(--color-failure);
 }
-
-.fade-in {
-  opacity: 0;
-  animation: fade-in forwards 600ms;
-  animation-delay: 100ms;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}

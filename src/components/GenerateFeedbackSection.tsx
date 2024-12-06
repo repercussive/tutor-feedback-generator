@@ -9,22 +9,23 @@ function GenerateFeedbackSection() {
   const setFeedbackContent = useFeedbackStore((state) => state.setFeedbackContent)
   const questionResponses = useFeedbackStore((state) => state.questionResponses)
   const additionalComments = useFeedbackStore((state) => state.additionalComments)
+  const learnerName = useFeedbackStore((state) => state.learnerName)
   const [showTextarea, setShowTextarea] = useState(false)
 
   if (feedbackContent && !showTextarea) {
     setShowTextarea(true)
   }
 
-  const disableGeneration = 
-    !additionalComments 
-    && Object.values(questionResponses).every((response) => response === 'none')
+  const disableGeneration =
+    !learnerName
+    || (!additionalComments && Object.values(questionResponses).every((response) => response === 'none'))
 
   return (
     <div className={styles.container}>
       <Button onClick={generateFeedback} disabled={disableGeneration}>
         Generate feedback
       </Button>
-      {disableGeneration && <p>No information provided yet</p>}
+      {!!learnerName && disableGeneration && <p>No information provided yet</p>}
       {showTextarea && <textarea
         rows={12}
         value={feedbackContent}
