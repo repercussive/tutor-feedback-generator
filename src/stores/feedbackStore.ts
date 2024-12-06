@@ -36,9 +36,9 @@ export const useFeedbackStore = create<FeedbackState>()((set) => ({
   setFeedbackPackCategory: (category) => set(() => ({ feedbackPackCategory: category })),
 
   activeFeedbackPack: initialFeedbackPack,
-  setActiveFeedbackPack: (newFeedbackPack) => set(() => ({
+  setActiveFeedbackPack: (newFeedbackPack) => set((state) => ({
     activeFeedbackPack: newFeedbackPack,
-    questionResponses: initializeQuestionResponses(newFeedbackPack)
+    questionResponses: initializeQuestionResponses(newFeedbackPack, state.questionResponses)
   })),
 
   customFeedbackPack: initialCustomFeedbackPack,
