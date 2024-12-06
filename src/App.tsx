@@ -7,7 +7,6 @@ import AdditionalCommentsSection from '@components/AdditionalCommentSection'
 
 function App() {
   const activeFeedbackPack = useFeedbackStore((state) => state.activeFeedbackPack)
-  const learnerName = useFeedbackStore((state) => state.learnerName)
 
   return (
     <>
