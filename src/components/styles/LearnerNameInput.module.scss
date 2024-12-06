@@ -13,18 +13,4 @@
     display: block;
     flex: 1;
   }
-  
-  p {
-    width: 100%;
-    padding-block: 5rem;
-    font-weight: 500;
-    font-size: 1.35rem;
-    text-align: center;
-    position: absolute;
-    top: 2.5rem;
-    background-color: var(--color-bg);
-    z-index: 1;
-    border-radius: 5px;
-    opacity: 0.85;
-  }
 }

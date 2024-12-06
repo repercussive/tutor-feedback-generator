@@ -25,7 +25,8 @@ function GenerateFeedbackSection() {
       <Button onClick={generateFeedback} disabled={disableGeneration}>
         Generate feedback
       </Button>
-      {!!learnerName && disableGeneration && <p>No information provided yet</p>}
+      {!learnerName && <p>⚠️ Learner name not provided</p>}
+      {!!learnerName && disableGeneration && <p>⚠️ No information provided</p>}
       {showTextarea && <textarea
         rows={12}
         value={feedbackContent}

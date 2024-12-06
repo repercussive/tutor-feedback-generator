@@ -17,16 +17,10 @@ function App() {
       </header>
       <main>
         <LearnerNameInput />
-        <div style={{
-          opacity: learnerName ? 1 : 0.25,
-          transition: 'opacity 0.4s',
-          pointerEvents: learnerName ? 'auto' : 'none'
-        }}>
-          <FeedbackSelector feedbackPack={activeFeedbackPack} />
-          <AdditionalCommentsSection />
-          <FeedbackPackSection />
-          <GenerateFeedbackSection />
-        </div>
+        <FeedbackSelector feedbackPack={activeFeedbackPack} />
+        <AdditionalCommentsSection />
+        <FeedbackPackSection />
+        <GenerateFeedbackSection />
       </main >
     </>
   )
