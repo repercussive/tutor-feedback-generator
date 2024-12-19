@@ -18,7 +18,7 @@ function GenerateFeedbackSection() {
 
   const disableGeneration =
     !learnerName
-    || (!additionalComments && Object.values(questionResponses).every((response) => response === 'none'))
+    || (!additionalComments && Object.values(questionResponses).every((response) => response === 'notApplicable'))
 
   return (
     <div className={styles.container}>

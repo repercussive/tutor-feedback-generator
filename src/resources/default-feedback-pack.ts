@@ -84,6 +84,10 @@ export const defaultFeedbackPack: FeedbackPack = {
         "They rarely used their camera, which limited interaction with the group.",
         "They needed to improve camera usage to create a more engaging learning experience.",
         "They did not consistently keep the camera on, impacting virtual engagement."
+      ],
+
+      "notApplicableComments": [
+        "They were exempt from having their camera on."
       ]
     },
 

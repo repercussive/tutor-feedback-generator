@@ -18,9 +18,9 @@ export function generateFeedback({ feedbackPack, learnerName, courseTitle, respo
   for (const question of feedbackPack.questions) {
     const response = responses[question.questionName]
 
-    if (response === 'none') continue
-
     const possibleComments = question[`${response}Comments`]
+    if (!possibleComments || possibleComments.length === 0) continue
+
     const randomComment = possibleComments[Math.floor(Math.random() * possibleComments.length)]
     result += insertLearnerName(randomComment, learnerName) + '\n\n'
   }

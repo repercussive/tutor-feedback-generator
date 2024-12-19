@@ -4,7 +4,7 @@ export function initializeQuestionResponses(feedbackPack: FeedbackPack, response
   const responses: Record<string, QuestionResponse> = {}
 
   for (const question of feedbackPack.questions) {
-    responses[question.questionName] = responsesToMerge?.[question.questionName] ?? 'none'
+    responses[question.questionName] = responsesToMerge?.[question.questionName] ?? 'notApplicable'
   }
 
   return responses

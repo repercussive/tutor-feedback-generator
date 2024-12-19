@@ -6,7 +6,7 @@ type FeedbackSelectorProps = {
   feedbackPack: FeedbackPack
 }
 
-const possibleResponses: QuestionResponse[] = ['positive', 'neutral', 'negative', 'none']
+const possibleResponses: QuestionResponse[] = ['positive', 'neutral', 'negative', 'notApplicable']
 
 function FeedbackSelector({ feedbackPack }: FeedbackSelectorProps) {
   const questionResponses = useFeedbackStore((state) => state.questionResponses)
@@ -25,7 +25,7 @@ function FeedbackSelector({ feedbackPack }: FeedbackSelectorProps) {
             <th scope="col" id="positive">Positive</th>
             <th scope="col" id="neutral">Neutral</th>
             <th scope="col" id="negative">Negative</th>
-            <th scope="col" id="none">N/A</th>
+            <th scope="col" id="notApplicable">N/A</th>
           </tr>
         </thead>
         <tbody>

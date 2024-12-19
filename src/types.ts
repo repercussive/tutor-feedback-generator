@@ -4,8 +4,9 @@ export type FeedbackPack = {
     questionName: string,
     positiveComments: string[],
     neutralComments: string[],
-    negativeComments: string[]
+    negativeComments: string[],
+    notApplicableComments?: string[]
   }>
 }
 
-export type QuestionResponse = 'positive' | 'neutral' | 'negative' | 'none'
+export type QuestionResponse = 'positive' | 'neutral' | 'negative' | 'notApplicable'
