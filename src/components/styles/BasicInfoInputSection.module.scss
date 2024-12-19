@@ -1,4 +1,4 @@
-.container {
+.container div {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
@@ -7,6 +7,7 @@
 
   label {
     margin-right: 0.8ch;
+    min-width: 10.75ch;
   }
 
   input {

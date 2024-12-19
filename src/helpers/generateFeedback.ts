@@ -1,12 +1,19 @@
 import { FeedbackPack, QuestionResponse } from '@src/types'
 
-export function generateFeedback(
-  feedbackPack: FeedbackPack, 
-  learnerName: string, 
+type FeedbackSource = {
+  feedbackPack: FeedbackPack,
+  learnerName: string,
+  courseTitle: string,
   responses: Record<string, QuestionResponse>,
   additionalComments: string
-) {
+}
+
+export function generateFeedback({ feedbackPack, learnerName, courseTitle, responses, additionalComments }: FeedbackSource) {
   let result = ''
+
+  if (courseTitle) {
+    result += `Feedback for course "${courseTitle}":\n\n`
+  }
 
   for (const question of feedbackPack.questions) {
     const response = responses[question.questionName]

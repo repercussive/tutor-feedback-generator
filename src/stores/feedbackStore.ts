@@ -12,7 +12,9 @@ const initialFeedbackPack = initialFeedbackPackCategory === 'default' ? defaultF
 
 interface FeedbackState {
   learnerName: string,
-  setLearnerName: (newName: string) => void
+  setLearnerName: (newName: string) => void,
+  courseTitle: string,
+  setCourseTitle: (newName: string) => void
   feedbackPackCategory: 'default' | 'custom',
   setFeedbackPackCategory: (category: 'default' | 'custom') => void,
   activeFeedbackPack: FeedbackPack,
@@ -31,6 +33,9 @@ interface FeedbackState {
 export const useFeedbackStore = create<FeedbackState>()((set) => ({
   learnerName: '',
   setLearnerName: (newName) => set(() => ({ learnerName: newName })),
+
+  courseTitle: '',
+  setCourseTitle: (title) => set(() => ({ courseTitle: title })),
 
   feedbackPackCategory: initialFeedbackPackCategory,
   setFeedbackPackCategory: (category) => set(() => ({ feedbackPackCategory: category })),
@@ -55,7 +60,13 @@ export const useFeedbackStore = create<FeedbackState>()((set) => ({
   feedbackContent: '',
   setFeedbackContent: (content: string) => set(() => ({ feedbackContent: content })),
   generateFeedback: () => set((state) => ({
-    feedbackContent: generateFeedback(state.activeFeedbackPack, state.learnerName, state.questionResponses, state.additionalComments)
+    feedbackContent: generateFeedback({
+      feedbackPack: state.activeFeedbackPack,
+      learnerName: state.learnerName,
+      courseTitle: state.courseTitle,
+      responses: state.questionResponses,
+      additionalComments: state.additionalComments
+    })
   }))
 }))
 

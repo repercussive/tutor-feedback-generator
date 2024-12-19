@@ -1,6 +1,6 @@
 import { useFeedbackStore } from '@src/stores/feedbackStore'
 import FeedbackSelector from '@components/FeedbackSelector'
-import LearnerNameInput from '@components/LearnerNameInput'
+import LearnerNameInput from '@src/components/BasicInfoInputSection'
 import FeedbackPackSection from '@components/FeedbackPackSection'
 import GenerateFeedbackSection from '@components/GenerateFeedbackSection'
 import AdditionalCommentsSection from '@components/AdditionalCommentSection'
