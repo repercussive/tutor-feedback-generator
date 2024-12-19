@@ -51,74 +51,74 @@ export const defaultFeedbackPack: FeedbackPack = {
     {
       "questionName": "Camera",
       "positiveComments": [
-        "<NAME> consistently kept their camera on and was present throughout the sessions.",
-        "<NAME> used their camera effectively to engage with the class.",
-        "<NAME> maintained focus by keeping their camera on.",
-        "<NAME> ensured their camera was on, contributing to a collaborative learning environment.",
-        "<NAME> was proactive in using their camera to enhance interaction.",
-        "<NAME> demonstrated professionalism by keeping their camera on throughout sessions.",
-        "<NAME> kept their camera on and actively engaged throughout the event.",
-        "<NAME> ensured a good virtual presence by using their camera.",
-        "<NAME> used their camera consistently, making it easier for everyone to connect.",
-        "<NAME> contributed to a healthy class environment by keeping the camera on.",
-        "<NAME> had their camera on, showing attentiveness and readiness to learn.",
-        "<NAME> was committed to keeping their camera active, enhancing group interaction.",
-        "<NAME> kept the camera on and used it to actively participate.",
-        "<NAME> ensured active visibility via camera, which enhanced the class's level of engagement.",
-        "<NAME> helped create a more interactive experience by maintaining their presence on camera.",
-        "<NAME> consistently kept their camera on, improving the overall classroom dynamic."
+        "They consistently kept their camera on and was present throughout the sessions.",
+        "They used their camera effectively to engage with the class.",
+        "They maintained focus by keeping their camera on.",
+        "They ensured their camera was on, contributing to a collaborative learning environment.",
+        "They were proactive in using their camera to enhance interaction.",
+        "They demonstrated professionalism by keeping their camera on throughout sessions.",
+        "They kept their camera on and actively engaged throughout the event.",
+        "They ensured a good virtual presence by using their camera.",
+        "They used their camera consistently, making it easier for everyone to connect.",
+        "They contributed to a healthy class environment by keeping the camera on.",
+        "They had their camera on, showing attentiveness and readiness to learn.",
+        "They were committed to keeping their camera active, enhancing group interaction.",
+        "They kept the camera on and used it to actively participate.",
+        "They ensured active visibility via camera, which enhanced the class's level of engagement.",
+        "They helped create a more interactive experience by maintaining their presence on camera.",
+        "They consistently kept their camera on, improving the overall classroom dynamic."
       ],
 
       "neutralComments": [
-        "<NAME> occasionally used their camera, though more consistency would have been beneficial.",
-        "<NAME> turned on their camera sporadically but could have improved regular use.",
-        "<NAME> participated with the camera on occasionally but could have done so more regularly.",
-        "<NAME> used their camera intermittently, balancing between on and off.",
-        "<NAME> demonstrated camera use occasionally but could have increased frequency.",
-        "<NAME> used the camera when needed but could have shown more consistent visibility.",
-        "<NAME> balanced camera use but could have strengthened engagement by keeping it on more often.",
-        "<NAME> used the camera now and then, which could have been more frequent for better engagement."
+        "They occasionally used their camera, though more consistency would have been beneficial.",
+        "They turned on their camera sporadically but could have improved regular use.",
+        "They participated with the camera on occasionally but could have done so more regularly.",
+        "They used their camera intermittently, balancing between on and off.",
+        "They demonstrated camera use occasionally but could have increased frequency.",
+        "They used their camera when needed but could have shown more consistent visibility.",
+        "They balanced camera use but could have strengthened engagement by keeping it on more often.",
+        "They used their camera now and then, which could have been more frequent for better engagement."
       ],
 
       "negativeComments": [
-        "<NAME> rarely used their camera, which limited interaction with the group.",
-        "<NAME> needed to improve camera usage to create a more engaging learning experience.",
-        "<NAME> did not consistently keep the camera on, impacting virtual engagement."
+        "They rarely used their camera, which limited interaction with the group.",
+        "They needed to improve camera usage to create a more engaging learning experience.",
+        "They did not consistently keep the camera on, impacting virtual engagement."
       ]
     },
 
     {
       "questionName": "Engagement",
       "positiveComments": [
-        "<NAME> actively participated in discussions and asked insightful questions.",
-        "<NAME> demonstrated excellent engagement through consistent contributions.",
-        "<NAME> was interactive and offered valuable insights in each session.",
-        "<NAME> engaged actively, contributing thoughtful and relevant comments.",
-        "<NAME> consistently participated in group activities and discussions.",
-        "<NAME> showed a keen interest in learning by asking clarifying questions.",
-        "<NAME> maintained a high level of engagement throughout the course.",
-        "<NAME> took initiative to engage in meaningful dialogue during sessions.",
-        "<NAME> demonstrated curiosity and enthusiasm, enhancing the class dynamic.",
-        "<NAME> regularly contributed ideas that enriched group discussions.",
-        "<NAME> was an active participant, promoting collaboration and teamwork.",
-        "<NAME> consistently provided valuable input in discussions.",
-        "<NAME> frequently contributed to discussions, showing deep understanding.",
-        "<NAME> helped create a healthy learning environment through active participation.",
-        "<NAME> responded to questions and contributed meaningfully."
+        "They actively participated in discussions and asked insightful questions.",
+        "They demonstrated excellent engagement through consistent contributions.",
+        "They were interactive and offered valuable insights in each session.",
+        "They engaged actively, contributing thoughtful and relevant comments.",
+        "They consistently participated in group activities and discussions.",
+        "They showed a keen interest in learning by asking clarifying questions.",
+        "They maintained a high level of engagement throughout the course.",
+        "They took initiative to engage in meaningful dialogue during sessions.",
+        "They demonstrated curiosity and enthusiasm, enhancing the class dynamic.",
+        "They regularly contributed ideas that enriched group discussions.",
+        "They were an active participant, promoting collaboration and teamwork.",
+        "They consistently provided valuable input in discussions.",
+        "They frequently contributed to discussions, showing deep understanding.",
+        "They helped create a healthy learning environment through active participation.",
+        "They responded to questions and contributed meaningfully."
       ],
 
       "neutralComments": [
-        "<NAME> engaged in discussions occasionally but could have participated more frequently.",
-        "<NAME> contributed occasionally but could have been more consistent.",
-        "<NAME> participated when prompted but was less active otherwise.",
-        "<NAME> was attentive but could have increased verbal engagement.",
-        "<NAME> showed interest but could have taken a more active role in discussions."
+        "They engaged in discussions occasionally but could have participated more frequently.",
+        "They contributed occasionally but could have been more consistent.",
+        "They participated when prompted but was less active otherwise.",
+        "They were attentive but could have increased verbal engagement.",
+        "They showed interest but could have taken a more active role in discussions."
       ],
 
       "negativeComments": [
-        "<NAME> seldom participated, which limited their overall engagement.",
-        "<NAME> rarely contributed to discussions, missing opportunities to share insights.",
-        "<NAME> was passive during group activities, needing more active participation."
+        "They seldom participated, which limited their overall engagement.",
+        "They rarely contributed to discussions, missing opportunities to share insights.",
+        "They were passive during group activities, needing more active participation."
       ]
     },
     {
